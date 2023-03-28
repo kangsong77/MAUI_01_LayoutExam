@@ -9,9 +9,12 @@
 
     <MenuItem x:Name="gridLayout" 
               Text="GridLayoutPage"
-              Clicked="gridLayout_Clicked" ></MenuItem>
+              Clicked="gridLayout_Clicked" />
+    <MenuItem x:Name="bindableLayout" 
+              Text="BindableLayoutPage"
+              Clicked="bindableLayout_Clicked" />
     <FlyoutItem FlyoutDisplayOptions="AsSingleItem">
-        <ShellContent Title="MAUI_01_LayoutExam" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        <ShellContent Title="MAUI_01_LayoutExam" ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
 </Shell>

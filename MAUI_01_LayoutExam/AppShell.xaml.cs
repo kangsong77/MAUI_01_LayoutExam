@@ -14,4 +14,10 @@ public partial class AppShell : Shell
         //페이지 Modal(백버튼 없음)
         Navigation.PushModalAsync(new GridLayoutPage());
     }
+
+    private void bindableLayout_Clicked(object sender, EventArgs e)
+    {
+        
+        Navigation.PushModalAsync(new BindableLayoutPage());
+    }
 }

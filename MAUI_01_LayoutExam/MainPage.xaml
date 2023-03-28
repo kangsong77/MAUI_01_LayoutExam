@@ -21,7 +21,7 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="ch01 Layout Exam"
+                Text="Maui Korea Developers"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
