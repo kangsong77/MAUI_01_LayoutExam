@@ -12,6 +12,7 @@
 ## 2. BindableLayout 연습 - Views.BindableLayoutPage.xaml
 
 참고: 마소문서 https://learn.microsoft.com/ko-kr/dotnet/maui/user-interface/layouts/bindablelayout?view=net-maui-7.0
+
 기초연습: https://github.com/kangsong77/MAUI_01_01_BindableLayout.App 
 
 
