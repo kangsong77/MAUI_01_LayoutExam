@@ -9,5 +9,8 @@
 
 ![image](https://user-images.githubusercontent.com/68939699/226965017-b988dd3f-379d-430f-8bc2-775757aff30f.png)
 
+## 2. BindableLayout 연습 - Views.BindableLayoutPage.xaml
+
+참고: 마소문서 https://learn.microsoft.com/ko-kr/dotnet/maui/user-interface/layouts/bindablelayout?view=net-maui-7.0
 
 
