@@ -46,4 +46,10 @@
 </Grid>
 ```
 
+##3. FlexLayout연습 - Views.FlexLayoutPage.xaml
+
+참고: 
+마소문서 https://learn.microsoft.com/ko-kr/dotnet/maui/user-interface/layouts/flexlayout?view=net-maui-7.0
+
+
 
