@@ -46,4 +46,26 @@
 </Grid>
 ```
 
+## 3. FlexLayout연습 - Views.FlexLayoutPage.xaml
+
+참고: 
+마소문서 https://learn.microsoft.com/ko-kr/dotnet/maui/user-interface/layouts/flexlayout?view=net-maui-7.0
+
+![image](https://user-images.githubusercontent.com/68939699/229242599-b4bd2b3c-a02b-4b45-b4d1-b7b943286983.png)
+
+```
+<!--[아이템]: 4x2-->
+<FlexLayout JustifyContent="SpaceAround" Wrap="Wrap" Margin="5"
+            BindableLayout.ItemsSource="{Binding Items}">
+    <BindableLayout.ItemTemplate>
+        <DataTemplate>
+            <VerticalStackLayout FlexLayout.AlignSelf="Center">
+                <BoxView WidthRequest="70" HeightRequest="70" Color="Gray"/>
+                <Label Text="{Binding}" HorizontalOptions="Center" Margin="0,5,0,5"></Label>
+            </VerticalStackLayout>
+        </DataTemplate>
+    </BindableLayout.ItemTemplate>
+</FlexLayout>
+```
+
 
