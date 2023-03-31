@@ -13,6 +13,9 @@
     <MenuItem x:Name="bindableLayout" 
               Text="BindableLayoutPage"
               Clicked="bindableLayout_Clicked" />
+    <MenuItem x:Name="flexLayout" 
+              Text="FlexLayoutPage"
+              Clicked="flexLayout_Clicked"/>
     <FlyoutItem FlyoutDisplayOptions="AsSingleItem">
         <ShellContent Title="MAUI_01_LayoutExam" ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>

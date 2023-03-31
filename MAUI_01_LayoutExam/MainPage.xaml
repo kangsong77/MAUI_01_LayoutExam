@@ -21,7 +21,7 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Maui Korea Developers"
+                Text="MAUI Korea Developers"
                 FontSize="18"
                 HorizontalOptions="Center" />
 

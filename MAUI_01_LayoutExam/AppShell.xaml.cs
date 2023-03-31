@@ -20,4 +20,9 @@ public partial class AppShell : Shell
         
         Navigation.PushModalAsync(new BindableLayoutPage());
     }
+
+    private void flexLayout_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new FlexLayoutPage());
+    }
 }

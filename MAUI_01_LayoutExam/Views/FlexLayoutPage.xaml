@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:MAUI_01_LayoutExam.Views"
+             x:Class="MAUI_01_LayoutExam.Views.FlexLayoutPage"
+             Title="FlexLayoutPage"
+             BackgroundColor="#E3E4E7">
+    <!-- 전체 : [스크롤뷰가 있는 content][확인버튼]-->
+    <Grid RowDefinitions="*, auto" RowSpacing="10" >
+        <!-- 스크롤뷰: 단일 자식만 가능 -->
+        <ScrollView>
+            <!--상단 3개 content :[고객정보][결제정보][기타정보]-->
+            <VerticalStackLayout Grid.Row="0" Spacing="10">
+                <!-- [고객정보]: 텍스트5줄 -->
+                <VerticalStackLayout Spacing="10" Padding="20" BackgroundColor="#fff" >
+                    <Label Text="내주소" FontAttributes="Bold"></Label>
+                    <Label Text="서울 강남구 강남대로" FontSize="16" ></Label>
+                    <Label Text="396 강남역 지하 1층" FontSize="16" ></Label>
+                    <Label Text="반려동물" Margin="0,20,0,0" FontAttributes="Bold"></Label>
+                    <Label Text="없음" FontSize="16"></Label>
+                </VerticalStackLayout>
+                <!-- [결제정보]: 텍스트3줄 content-->
+                <VerticalStackLayout Spacing="10" Padding="20" BackgroundColor="#fff">
+                    <Label Text="결제정보" FontAttributes="Bold"></Label>
+                    <Grid ColumnDefinitions="*,auto">
+                        <Label Grid.Column="0" Text="결제 예정 금액" FontSize="16"></Label>
+                        <Label Grid.Column="1" Text="31,200원" FontSize="16" ></Label>
+                    </Grid>
+                    <Label Grid.Row="2" Text="결제는 서비스가 완료된 후 진행됩니다."
+                           TextColor="#A2A2A2"></Label>
+                </VerticalStackLayout>
+                <!-- [기타정보]: content4줄-->
+                <VerticalStackLayout Spacing="10" Padding="20" BackgroundColor="#fff" >
+                    <Label Text="청소 도구를 꼭 준비해주세요." ></Label>
+                     <!--[아이템]: 4x2-->
+                    <FlexLayout JustifyContent="SpaceAround" Wrap="Wrap" Margin="5"
+                                BindableLayout.ItemsSource="{Binding Items}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <VerticalStackLayout FlexLayout.AlignSelf="Center">
+                                    <BoxView WidthRequest="70" HeightRequest="70" Color="#E3E4E7"/>
+                                    <Label Text="{Binding}" HorizontalOptions="Center" Margin="0,5,0,5"></Label>
+                                </VerticalStackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </FlexLayout>
+                    <Label Text="취소/변경시 규정에 따라 수수료가 부과됩니다." ></Label>
+                    <Label Text="수수료 규정 보기" 
+                           TextColor="#065BF5" FontAttributes="Bold"></Label>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+        <Button Grid.Row="1" Text="홈으로" x:Name="OkBtn" CornerRadius="0" FontSize="16" Padding="20" BackgroundColor="#065BF5" Clicked="OkBtn_Clicked"></Button>
+    </Grid>
+</ContentPage>
