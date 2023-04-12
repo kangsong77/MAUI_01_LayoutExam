@@ -25,4 +25,9 @@ public partial class AppShell : Shell
     {
         Navigation.PushModalAsync(new FlexLayoutPage());
     }
+
+    private void final_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new FinalPage());
+    }
 }

@@ -16,6 +16,9 @@
     <MenuItem x:Name="flexLayout" 
               Text="FlexLayoutPage"
               Clicked="flexLayout_Clicked"/>
+    <MenuItem x:Name="final" 
+              Text="FinalPage"
+              Clicked="final_Clicked"/>
     <FlyoutItem FlyoutDisplayOptions="AsSingleItem">
         <ShellContent Title="MAUI_01_LayoutExam" ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
